@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Calculation</title>
+<script>
+function ValidatePartOne(){
+
+
+ x = document.getElementById("field1").value;
+if (x==24){
+
+document.getElementById("demo").innerHTML = "Answer is Correct";
+
+}
+
+else{
+
+       document.getElementById("demo").innerHTML = "Answer is Incorrect";
+}
+
+}
+
+function ValidatePartTwo(){
+
+
+ x = document.getElementById("field 2").value;
+if (x==61){
+
+document.getElementById("demo2").innerHTML = "Answer is Correct";
+
+}
+
+else{
+
+       document.getElementById("demo2").innerHTML = "Answer is Incorrect";
+}
+
+}
+
+
+function ValidatePartThree(){
+
+
+ x = document.getElementById("field 3").value;
+if (x==3){
+
+document.getElementById("demo3").innerHTML = "Answer is Correct";
+
+}
+
+else{
+
+       document.getElementById("demo3").innerHTML = "Answer is Incorrect";
+}
+
+}
+
+
+</script>
+</head>
+<body>
+<form>
+<b>Solve this:<br></b>
+<p>01. 8*3+3/3-1</p>
+<input type="text" id="field1"><br><br>
+<input type="button" value="submit the Answer" onClick="ValidatePartOne()">
+<p id="demo"> </p>
+
+
+<b>Solve this:<br></b>
+<p>02. 7*9-3*4+10</p>
+<input type="text" id="field 2"><br><br>
+<input type="button" value="submit the Answer" onClick="ValidatePartTwo()">
+<p id="demo2"> </p>
+
+<b>Solve this:<br></b>
+<p>02) Scientists recently name three new forms of matter.<br>How many forms of matter are there now</p>
+<input type="text" id="field 3"><br><br>
+<input type="button" value="submit the Answer" onClick="ValidatePartThree()">
+<p id="demo3"> </p>
+</form>
+
+</body>
+</html>
